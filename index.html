@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="profile.jpg" alt="Foto Profil" class="profile-pic" />
+        <p>R</p>
+      </div>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Beranda</a>
+        <a href="profile.html">Profil</a>
+        <a href="https://ubpkarawang.ac.id/" class="a-navbar" target="_blank">UBP Karawang</a>
+      </nav>
+
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="posts-section">
+      <a href="post1.html" class="post-card">
+        <div class="post-bg" style="background-image: url('https://wallpapercave.com/wp/wp7551845.png');"></div>
+        <div class="post-content">
+          <div class="badge">Post 1</div>
+          <h2 class="post-title">Tatacara installasi DBMS (MySQL)</h2>
+        </div>
+      </a>
+
+      <a href="post2.html" class="post-card">
+        <div class="post-bg" style="background-image: url('https://b593559.smushcdn.com/593559/wp-content/uploads/2023/11/foto-580x349.png?lossy=1&strip=1&webp=1');"></div>
+        <div class="post-content">
+          <div class="badge">Post 2</div>
+          <h2 class="post-title">attribute, entitas dan relasi dalam ERD.</h2>
+        </div>
+      </a>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Blog Pribadi - Tugas Basis Data</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
